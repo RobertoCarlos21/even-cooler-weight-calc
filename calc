@@ -1,10 +1,10 @@
 calc = input("Enter your weight in pounds or kilograms (L/K): ")
 unit = input("Enter 'L' for pounds or 'K' for kilograms: ")
 if unit.upper()== "L":
-    weight = int(calc) * 0.4
+    weight = float(calc) * 0.4
     print("Your weight in lbs is " + str(weight))
     if unit.upper()== "K":
-        weight= int(calc) * 2.2
+        weight= float(calc) * 2.2
         print("Your weight in kilos is " + str(weight))
 else:
     print("Invalid unit. Please enter 'L' for pounds or 'K' for kilograms.")
